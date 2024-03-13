@@ -8,7 +8,18 @@ Repo link: <https://github.com/cse151a-nba-project/final-paper>
 
 # Abstract (Introduction)
 
+Although sports analytics captured national attention only in 2011 with the release of Moneyball, research in the field is nearly a century old. Until relatively recently, this research was largely done by hand; however, the heavily quantitative nature of sports analytics makes it an attractive target for machine learning. This paper explores the application of advanced machine learning models to predict team performance in National Basketball Association (NBA) regular season and playoff games. Several models were trained on a rich dataset spanning over four decades, which includes advanced individual player metrics. The core of our analysis lies in combining individual player metrics without the need of team data to create machine learning models, using entirely real data that can be sufficient enough in size to predict team performance. We employ various machine learning techniques, including deep neural networks and support vector models, to generate predictive models for player performance and compare these models’ performance with both each other and traditional predictive models like linear regression. Our analysis suggests that the elastic net model method outperforms other models, with neural networks and support vector models overfitting. Moreover, we note that a multi-model approach with ensemble learning also results in a performant model, even when including less performant models such as linear regression models and overfitting deep neural networks. Our findings emphasize the immense potential of sophisticated machine learning techniques in sports analytics and mark a growing shift towards computer-aided and computer-based approaches in sports analytics.
+
 # Project Introduction
+
+Our project focuses on applying advanced machine learning techniques to predict team performance in the National Basketball Association (NBA). We chose this topic because of the increasing importance and popularity of sports analytics in recent years, as well as a personal interest by many of our team members.
+
+The NBA, with its rich history and extensive data availability, provides an excellent opportunity to explore the potential of machine learning in sports analytics. By developing accurate predictive models for team performance, we can gain valuable insights that can help teams make better decisions in terms of player selection, game strategies, and overall team management.
+
+Moreover, the broader impact of having a good predictive model for NBA team performance is significant. It can assist teams in optimizing their roster, identifying key player attributes that contribute to team success, and making data-driven decisions during the game. This can lead to improved team performance, increased fan engagement, and even financial benefits for the teams and the league as a whole.
+
+Furthermore, the techniques and approaches used in this project can be extended to other sports and domains. The principles of applying machine learning to predict outcomes based on individual performance metrics can be applied to various fields, such as business, healthcare, and education. By demonstrating the effectiveness of these techniques in the context of the NBA, we aim to inspire further research and application of machine learning in sports analytics and beyond.
+
 
 # Previous Submissions
 
