@@ -4,6 +4,7 @@ CSE 151A Winter 2024
 
 Ji, Daniel <daji@ucsd.edu>; Weng, Max <maweng@ucsd.edu>; Li, Aaron <all042@ucsd.edu>; Wang, David <dyw001@ucsd.edu>; Jin, Bryant <brjin@ucsd.edu>; Ye, Eric <e2ye@ucsd.edu>; Shen, Kevin <k3shen@ucsd.edu>; Sood, Roshan <rosood@ucsd.edu>; Lu, Kevin <k8lu@ucsd.edu>; Kanetkar, Dhruv <dkanetkar@ucsd.edu> 
 
+Repo link: <https://github.com/cse151a-nba-project/final-paper>
 
 # Abstract (Introduction)
 
