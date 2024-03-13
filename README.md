@@ -566,6 +566,7 @@ Milestone 3 Submission: <https://github.com/cse151a-nba-project/milestone-3>
 
 Milestone 4 Submission: <https://github.com/cse151a-nba-project/milestone-4>
 
+Milestone 5 Submission: <https://github.com/cse151a-nba-project/milestone-5>
 
 # References
 
