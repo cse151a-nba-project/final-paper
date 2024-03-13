@@ -509,6 +509,21 @@ def ensemble_predict(X):
 
 # Results
 
+## Data Exploration
+Data exploration results are closely related to the process of exploring the data itself, please refer to the methods section.
+
+## Data Preprocessing and Calculation
+For our first model, our data preprocessing tries to predict given the statistics of the top 8 players of a team the expected win percentage. For these statistics, we chose to use the following: 'per', 'ws_48', 'usg_percent', 'bpm', 'vorp'. These stand for player efficiency rating, win shares per 48 minutes, usage percentage, box plus/minus, and value over replacement player values. We chose these statistics for each player as we believe they holistically encompass a player's value in numbers. For instance, with player efficiency rating, we are able to cover both positive accomplishments like field goals, free throws, 3-pointers, assists, rebounds, blocks and steals, and negative ones like missed shots, turnovers and personal fouls. However, 'per' has some limitations - it doesn't account well for defensive contributions beyond steals and blocks, and can reward inefficient volume scoring. Similarly, both 'ws_48' and 'bpm' are able to further solidify an individual player's contribution to the team and exactly how many points they are putting into the game. We then tried to counteract the limitations brought up by 'per', 'ws_48', and 'bpm' using 'usg_percent' and 'vorp', which gives statistics on how the player does within the team. This allows us to also consider the synergy of this player with the rest of the team and ensure that the player is an essential part of why a team might be performing well. Hence, our first model took in a training input of shape (number of teams, 8 players * 5 statistics) = (number of teams, 40). Each of these input features of 40 is mapped to a scalar output feature representing our win percentage. This makes our training output of shape (number of teams, 1). Note that we scaled up our win percentage by 100, so instead of 38% win percentage equating to 0.38, we train it based on 38. This is done in order to have a more accurate MSE and MAE, and we found that our models still performed significantly well even with this scaling.
+
+However, for our first model we found our results to be lacking, which is also available in our milestone 3 analysis. Thus, we decided to work with more input features to hopefully achieve more accurate measures. We had to balance between adding more features and also not having an imbalance in features which can lead to overfitting. For our models 2 and 3, we decided to take the top 10 players of a team now to predict the expected win percentage. Moreover, for our statistics, we added in four extra statistics: 'mp_per_game', 'ts_percent', 'experience', and 'x3p_ar'. These stand for minutes played per game, true shotting percentage, player experience, and three point attempts. The four new statistics - 'mp_per_game', 'ts_percent', 'experience', and 'x3p_ar' - enhance our understanding of the five previously discussed metrics ('per', 'ws_48', 'usg_percent', 'bpm', 'vorp') by providing additional context and nuance. 'ts_percent' helps to more accurately assess a player's scoring efficiency, which is a key component of 'per', 'ws_48', 'usg_percent', 'bpm', 'vorp'. For instance, someone with lower 'ts_percent' but higher 'per' can be deemed less valuable towards the overall winning percentage and vice versa depending on the general trend for players. Furthermore, experience contextualizes these metrics, as a young player posting impressive numbers is often more noteworthy than a veteran doing the same. Thirdly, 'x3p_ar' adds depth to our interpretation of 'usg_percent' and efficiency metrics, as it indicates a player's shooting style and role within the modern, three-point-oriented NBA. Finally, 'mp_per_game' is crucial for interpreting all of these statistics, as it provides insight into a player's role and the sustainability of their performance. A player with impressive per-minute numbers in limited playing time might have the potential for an even greater impact with increased minutes. Ultimately, these four statistics work in concert with the original five to provide a more comprehensive picture of a player's contributions and value. Thus, for our models 2 and 3, we took in a training input of shape (number of teams, 10 players * 9 statistics) = (number of teams, 90). Each of these input features of 90 is mapped to a scalar output feature representing our win percentage.
+
+## Model 1
+
+
+## Model 2
+
+## Model 3
+
 # Discussion
 
 # Conclusion
@@ -542,7 +557,7 @@ Contribution: Worked with Eric in taking raw dataset and determined interesting 
 
 #### Eric Ye: Data Exploration Engineer
 
-Contribution: Worked with Bryan in taking raw dataset and determined interesting features while also providing visualizations for data distribution / type / correlation. Was more involved in taking potentially robust NBA datasets from Bryant and working with David to preprocess the data (connecting model creation steps as a middle man).
+Contribution: Worked with Bryant in taking raw dataset and determined interesting features while also providing visualizations for data distribution / type / correlation. Was more involved in taking potentially robust NBA datasets from Bryant and working with David to preprocess the data (connecting model creation steps as a middle man).
 
 
 #### Kevin Shen: Model Engineer
