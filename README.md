@@ -559,7 +559,7 @@ In conclusion, there are numerous exciting opportunities for future work in this
 
 #### Daniel Ji: Project Manager
 
-Contribution: Oversaw project and worked and verified work on majority of project aspects: dataset exploration, data exploration, individual model creation and hyperparameter tuning, data visualization, and data interpretation and writeup. 
+Contribution: Oversaw project and worked and verified work on majority of project aspects: dataset exploration, data exploration, individual model creation and hyperparameter tuning, data visualization, and data interpretation and writeup. Worked on writing final research paper.
 
 
 #### Max Weng: Data Visualization & Model Engineer
@@ -574,7 +574,7 @@ Contribution: Worked on the coding of linear regression model, elastic net model
 
 #### David Wang: Data Preprocessing Engineer
 
-Contribution: Preprocessed data to be scaled / normalized / feature extracted so that it can be used as input data for models. Also assisted in the initial data exploration / visualization process. Worked on writing final research paper.
+Contribution: Preprocessed data to be scaled / normalized / feature extracted so that it can be used as input data for models. Also assisted in the initial data exploration / visualization process.
 
 
 #### Bryant Jin: Data Exploration Engineer
