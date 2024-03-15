@@ -564,17 +564,17 @@ Contribution: Oversaw project and worked and verified work on majority of projec
 
 #### Max Weng: Data Visualization & Model Engineer
 
-Contribution: Helped create various data visualizations to analyze linear regression model, elastic net model, DNN model, and SVR model performance. Also worked on coding and tuning the models themselves. 
+Contribution: Helped create various data visualizations to analyze linear regression model, elastic net model, DNN model, and SVR model performance. Also worked on coding and tuning the models themselves. Worked on writing final research paper.
 
 
 #### Aaron Li: Model Engineer
 
-Contribution: Worked on the coding of linear regression model, elastic net model, DNN model, and SVR models and integrating data preprocessing code to provide model input data. 
+Contribution: Worked on the coding of linear regression model, elastic net model, DNN model, and SVR models and integrating data preprocessing code to provide model input data. Worked on writing final research paper.
 
 
 #### David Wang: Data Preprocessing Engineer
 
-Contribution: Preprocessed data to be scaled / normalized / feature extracted so that it can be used as input data for models. Also assisted in the initial data exploration / visualization process. 
+Contribution: Preprocessed data to be scaled / normalized / feature extracted so that it can be used as input data for models. Also assisted in the initial data exploration / visualization process. Worked on writing final research paper.
 
 
 #### Bryant Jin: Data Exploration Engineer
