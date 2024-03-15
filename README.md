@@ -519,6 +519,8 @@ However, for our first model we found our results to be lacking, which is also a
 
 ## Model Results
 
+To summarize the performance of all the models we've created and discussed here, we've created a table here to record training and testing MSE, MAE, and R^2. We used these metrics because we are dealing with a regression problem and MSE and MAE highlight the error we have in our predictions, with one heavily penalizing outliers and the other not as much, gaining two perspectives of the models' performance. R^2 is particularly useful because it describes the correlation between our predicted and actual values, with 1 being a universal target goal for all models for this metric (1 means the predicted results exactly matches the actual results). 
+
 |              | Linear | Elastic Net |  DNN   | Tuned DNN | SVR model | Ensemble model |
 |--------------|--------|-------------|--------|-----------|-----------|----------------|
 | Training MSE | 16.704 |   17.376    | 19.954 |  11.957   | 12.083    | 14.803         |
@@ -528,8 +530,18 @@ However, for our first model we found our results to be lacking, which is also a
 | Testing MAE  | 3.7103 |   3.6713    | 4.1783 |  4.7918   | 4.168     | 3.680          |
 | Testing R^2  | 0.9028 |   0.9072    | 0.8850 |  0.8274   | 0.8823    | 0.9086         |
 
+For more extensive model results and diagrams, please see each of the respective notebooks for more analysis. 
+
+Below is a diagram showing the training history for our Tuned DNN model (the best DNN model we had), with EarlyStopping callback included to prevent overfitting. 
+
 ![Untitled](https://github.com/cse151a-nba-project/final-paper/assets/73797155/83cb1423-16ed-4da0-82a0-b3f375d8c95e)
+
+This second diagram shows the distribution of win percentages in the 2020 season across models and the actual data, giving us an idea of how accurate models are in predicting by looking at if they generally fit the same distribution as the actual team performances. 
+
 ![Untitled](https://github.com/cse151a-nba-project/final-paper/assets/73797155/8afe6a6f-ebde-4333-b6b8-bf73249b12da)
+
+This final diagram depicts the predicted vs. actual results of teams in 2020, with the x axis representing the actual team win percentage and the dashed line representing what the value should be (the equation of the line is `y=x`, meaning that at a given value `(x_i, y_i)`, the predicted value's "correct / best" value should be equal to the actual value `y_i = x_i`, therefore making the line of best fit `y=x`.
+
 ![Untitled](https://github.com/cse151a-nba-project/final-paper/assets/73797155/f014d5fc-c82b-4ca3-8659-33a4d4275fe3)
 
 # Discussion
