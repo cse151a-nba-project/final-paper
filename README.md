@@ -530,7 +530,7 @@ To summarize the performance of all the models we've created and discussed here,
 | Testing MAE  | 3.7103 |   3.6713    | 4.1783 |  4.7918   | 4.168     | 3.680          |
 | Testing R^2  | 0.9028 |   0.9072    | 0.8850 |  0.8274   | 0.8823    | 0.9086         |
 
-For more extensive model results and diagrams, please see each of the respective notebooks for more analysis. 
+**For more extensive model results and diagrams, please see each of the respective notebooks for more analysis.**
 
 Below is a diagram showing the training history for our Tuned DNN model (the best DNN model we had), with EarlyStopping callback included to prevent overfitting. 
 
