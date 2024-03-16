@@ -601,7 +601,7 @@ Contribution: Worked with Bryant in taking raw dataset and determined interestin
 
 #### Kevin Shen: Model Engineer
 
-Contribution: Worked closely with Aaron to create various optimal machine learning models (linear regression, elastic net, DNN, SVR) and hyperparameter tune and analyze and improve performance. 
+Contribution: Worked closely with Aaron to create various optimal machine learning models (linear regression, elastic net, DNN, SVR) and hyperparameter tune and analyze and improve performance. Worked on writing final research paper.
 
 
 #### Roshan Sood: Data Preprocessing Engineer
